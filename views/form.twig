@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   
+  </head>
+  <body>
+<h1>contact list </h1>
+<label>search</label>
+
+<input type="text" id="Utilisateur" name="Nom"  />
+<table border="2" >
+    
+  
+        <tr>
+            <td>fullname</td>
+            <td>phone</td>
+          <td>Actions</td>
+        </tr>
+       <tr>
+       {% for contact in cont %}
+            <td>{{contact.fullname}} </td>
+            <td>{{contact.phone}} </td>
+          <td> <a href=""> 
+          <button>Edit</button>
+          <a href=""> 
+           <button>delete</button>
+          
+          </td>
+        </tr>
+    
+</table>
+
+<h2>add new contact </h2>
+<label> fullname<input type="text" id="Utilisateur" name="Nom"  /></label> <br>
+
+<label>phone<input type="text" id="Utilisateur" name="Nom"  /></label> <br>
+<button  type="button">
+    add new contact
+</button>
+
+</body>
+</html>
